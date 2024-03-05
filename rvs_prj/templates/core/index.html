@@ -1,11 +1,112 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RVS</title>
-</head>
-<body>
-    <h1>Rock Vinyl Shop</h1>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container-fluid mt-5" style="text-align: center;">
+    <h4>
+        Welcome to Rock Vinyl Shop!
+    <br/>
+    Your place where sound becomes legend! Explore our collection of rock vinyl records - from classics to rare editions. 
+    <br/>
+    Start your journey through the world of music now!
+    <br/>
+    In our offer, you will find vinyl records from genres:
+    </h4>
+</div>
+
+<div class="container mt-5">
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <h5>Clasic Rock</h5>
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                Classic rock, originating from the 1950s and 1960s, is characterized by dynamic melodies and diverse arrangements, serving as the foundation for the entire rock genre. Iconic bands such as The Beatles and The Rolling Stones, along with their unforgettable songs, continue to enjoy recognition from audiences worldwide.
+            </div>
+            <a href="#" class="btn btn-primary mb-2">See more</a>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <h5>Alternative Rock</h5>
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+               Alternative rock emerged as a genre in the 1980s and is known for its experimental and non-mainstream approach to rock music. Bands like Nirvana, Radiohead, and The Smashing Pumpkins are iconic representatives, crafting innovative sounds and lyrical themes that resonate with audiences globally.
+            </div>
+              <a href="#" class="btn btn-primary mb-2">See more</a>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <h5>Hard Rock</h5>
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                Hard rock, born in the late 1960s and early 1970s, is characterized by heavy guitar riffs, powerful vocals, and energetic performances. Bands like AC/DC, Guns N' Roses, and Aerosmith are synonymous with the genre, delivering electrifying music that continues to captivate audiences around the world.
+            </div>
+              <a href="#" class="btn btn-primary mb-2">See more</a>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                <h5>Metal</h5>
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                Metal, originating in the late 1960s and early 1970s, is characterized by its heavy guitar riffs, aggressive drumming, and powerful vocals. Bands like Metallica, Iron Maiden, and Black Sabbath are pioneers of the genre, crafting intense and often complex compositions that have influenced countless musicians and continue to resonate with audiences worldwide.
+            </div>
+              <a href="#" class="btn btn-primary mb-2">See more</a>
+            </div>
+          </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                <h5>Glam Rock</h5>
+            </button>
+          </h2>
+          <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                Glam rock, popularized in the 1970s, is known for its flamboyant and theatrical style, characterized by extravagant costumes, makeup, and stage personas. Iconic artists such as David Bowie, Queen, and T. Rex embraced the genre, creating a blend of catchy melodies and visual spectacle that captivated audiences and left a lasting impact on the music industry.
+            </div>
+            <a href="#" class="btn btn-primary mb-2">See more</a>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                <h5>Blues</h5>
+            </button>
+          </h2>
+          <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                Blues, with its roots in African-American musical traditions, emerged in the late 19th century and evolved into a genre known for its soulful melodies, expressive vocals, and emotive guitar playing. Legendary artists such as B.B. King, Muddy Waters, and John Lee Hooker are synonymous with the blues, crafting timeless songs that explore themes of hardship, love, and redemption, and influencing generations of musicians across the globe.
+            </div>
+            <a href="#" class="btn btn-primary mb-2">See more</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="container mt-3" style="text-align: center;">
+        <h4>You can also explore and browse through the discographies of your favorite artists.</h4>
+      </div>
+    
+</div>
+
+{% endblock  %}
+    
