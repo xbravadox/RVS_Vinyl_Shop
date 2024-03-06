@@ -1,53 +1,58 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {% comment %} Font Awesome {% endcomment %}
-    <script src="https://kit.fontawesome.com/3600db8b9c.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    {% comment %} Google font {% endcomment %}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Protest+Riot&display=swap" rel="stylesheet">
+  {% comment %} Font Awesome {% endcomment %}
+  <script src="https://kit.fontawesome.com/3600db8b9c.js" crossorigin="anonymous"></script>
 
-    
+  {% comment %} Google font {% endcomment %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Protest+Riot&display=swap" rel="stylesheet">
 
-    <title>RVS</title>
-  </head>
-  {% include "nav.html" %}
-  <body>
-    <div    
-        class="container-fluid mt-5" 
-        style="text-align: center; font-family: 'Protest Riot';">
-        <h1 style="font-size: 100px; text-shadow: #FC0 1px 0 10px;">Rock Vinyl Shop</h1>
-    </div>
-{% block content %}{% endblock content %}
 
-<!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="container-fluid my-5">
 
-    <footer class="footer bg-dark text-center text-white fixed-bottom"> 
+  <title>RVS</title>
+</head>
+{% include "nav.html" %}
+
+<body>
+  <div class="container-fluid mt-5" style="text-align: center; font-family: 'Protest Riot';">
+    <h1 style="font-size: 100px; text-shadow: #FC0 1px 0 10px;">Rock Vinyl Shop</h1>
+  </div>
+  {% block content %}{% endblock content %}
+
+  <!-- Remove the container if you want to extend the Footer to full width. -->
+
+
+  <footer class="footer mt-auto text-center text-white py-3 bg-dark fixed-bottom" style="height: 4vh;">
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2024 Copyright:
-      <a class="text-white" href="#">RVS</a>
-    </div>
+    Copyright &copy; 2024 - <script>
+      document.write(new Date().getFullYear())
+    </script>
+    <a class="text-white" href="#">Rock Vinyl Shop</a>
+
     <!-- Copyright -->
   </footer>
-    
-  </div>
-  <!-- End of .container -->
 
 
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-  </body>
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+
+</body>
+
 </html>
